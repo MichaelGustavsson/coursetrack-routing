@@ -1,0 +1,30 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#coursetrack-navbar-collapse-1"
+        aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a href="#" class="navbar-brand">Course Track</a>
+    </div>
+    <div class="collapse navbar-collapse" id="coursetrack-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="" [routerLink]="['/dashboard']">Dashboard</a></li>
+        <li><a href="" [routerLink]="['/courses']">Courses</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="container">
+  <router-outlet></router-outlet>
+</section>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#">&copy;Learning Tree International</a></li>
+    </ul>
+  </div>
+</nav>
